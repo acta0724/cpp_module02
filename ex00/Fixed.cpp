@@ -3,23 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   Fixed.cpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kiwasa <kiwasa@student.42.jp>              +#+  +:+       +#+        */
+/*   By: iwasakatsuya <iwasakatsuya@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/25 01:51:31 by kiwasa            #+#    #+#             */
-/*   Updated: 2025/04/28 23:23:53 by kiwasa           ###   ########.fr       */
+/*   Updated: 2025/04/30 11:03:56 by iwasakatsuy      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Fixed.hpp"
+#include "./Fixed.hpp"
 #include <iostream>
 
-Fixed::Fixed(void) : _value(0)
-{
+Fixed::Fixed(void) : _value(0) {
 	std::cout << "Default constructor called" << std::endl;
 }
 
-Fixed::Fixed(const Fixed &src)
-{
+Fixed::Fixed(const Fixed &src) {
 	std::cout << "Copy constructor called" << std::endl;
 	*this = src;
 }
