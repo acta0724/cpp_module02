@@ -3,17 +3,17 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: kiwasa <kiwasa@student.42.jp>              +#+  +:+       +#+         #
+#    By: iwasakatsuya <iwasakatsuya@student.42.f    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/27 00:53:57 by kiwasa            #+#    #+#              #
-#    Updated: 2025/04/28 23:25:56 by kiwasa           ###   ########.fr        #
+#    Updated: 2025/05/02 13:25:16 by iwasakatsuy      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = fixed
 
 CC = c++
-CFLAGS = -Wall -Wextra -Werror -std=c++98
+CFLAGS = -Wall -Wextra -Werror -std=c++98 -pedantic
 
 SRCS = main.cpp Fixed.cpp
 OBJS = $(SRCS:.cpp=.o)

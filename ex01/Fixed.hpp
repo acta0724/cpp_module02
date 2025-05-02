@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Fixed.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kiwasa <kiwasa@student.42.jp>              +#+  +:+       +#+        */
+/*   By: iwasakatsuya <iwasakatsuya@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/27 00:54:00 by kiwasa            #+#    #+#             */
-/*   Updated: 2025/04/28 23:25:39 by kiwasa           ###   ########.fr       */
+/*   Updated: 2025/05/02 13:24:58 by iwasakatsuy      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,15 +15,14 @@
 
 #include <iostream>
 
-class Fixed
-{
+class Fixed {
 	private:
 		int 				_value;
 		static const int	_fractionalBits = 8;
 	public:
 		Fixed(void);
-		Fixed(const float n);
-		Fixed(const int n);
+		explicit Fixed(const float n);
+		explicit Fixed(const int n);
 		Fixed(const Fixed &rhs);
 		Fixed &operator=(const Fixed &rhs);
 		~Fixed(void);

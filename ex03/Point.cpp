@@ -6,7 +6,7 @@
 /*   By: iwasakatsuya <iwasakatsuya@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/30 00:35:03 by iwasakatsuy       #+#    #+#             */
-/*   Updated: 2025/04/30 10:29:48 by iwasakatsuy      ###   ########.fr       */
+/*   Updated: 2025/05/02 13:43:45 by iwasakatsuy      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,20 +18,17 @@ Point::Point(const float x, const float y) : _x(x), _y(y) {}
 
 Point::Point(const Point &src) : _x(src._x), _y(src._y) {}
 
-Point &Point::operator=(const Point &rhs)
-{
+Point &Point::operator=(const Point &rhs) {
     (void)rhs;
     return *this;
 }
 
 Point::~Point() {}
 
-Fixed Point::getX() const
-{
+Fixed Point::getX() const {
     return this->_x;
 }
 
-Fixed Point::getY() const
-{
+Fixed Point::getY() const {
     return this->_y;
 }

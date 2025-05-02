@@ -6,7 +6,7 @@
 /*   By: iwasakatsuya <iwasakatsuya@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/30 00:34:42 by iwasakatsuy       #+#    #+#             */
-/*   Updated: 2025/04/30 10:28:10 by iwasakatsuy      ###   ########.fr       */
+/*   Updated: 2025/05/02 13:44:06 by iwasakatsuy      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,10 @@
 #include "Fixed.hpp"
 
 class Point {
-private:
+ private:
     Fixed const _x;
     Fixed const _y;
-public:
+ public:
     Point();
     Point(const float x, const float y);
     Point(const Point &src);

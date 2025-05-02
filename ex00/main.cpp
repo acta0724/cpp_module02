@@ -3,18 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kiwasa <kiwasa@student.42.jp>              +#+  +:+       +#+        */
+/*   By: iwasakatsuya <iwasakatsuya@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/25 01:51:25 by kiwasa            #+#    #+#             */
-/*   Updated: 2025/04/28 23:23:39 by kiwasa           ###   ########.fr       */
+/*   Updated: 2025/05/02 13:16:07 by iwasakatsuy      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
 #include "Fixed.hpp"
 
-int main(void)
-{
+int main(void) {
 	Fixed a;
 	Fixed b(a);
 	Fixed c;

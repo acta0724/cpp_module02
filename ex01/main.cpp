@@ -6,15 +6,14 @@
 /*   By: iwasakatsuya <iwasakatsuya@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/27 00:53:53 by kiwasa            #+#    #+#             */
-/*   Updated: 2025/04/29 19:28:28 by iwasakatsuy      ###   ########.fr       */
+/*   Updated: 2025/05/02 13:17:12 by iwasakatsuy      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
 #include "Fixed.hpp"
 
-int main(void)
-{
+int main(void) {
 	Fixed a;
 	Fixed const b(10);
 	Fixed const c(42.42f);
