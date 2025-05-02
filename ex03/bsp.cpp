@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   bsp.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iwasakatsuya <iwasakatsuya@student.42.f    +#+  +:+       +#+        */
+/*   By: kiwasa <kiwasa@student.42.jp>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/30 00:35:48 by iwasakatsuy       #+#    #+#             */
-/*   Updated: 2025/05/02 13:36:03 by iwasakatsuy      ###   ########.fr       */
+/*   Updated: 2025/05/02 14:42:49 by kiwasa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@ bool bsp(Point const a, Point const b, Point const c, Point const point) {
     Fixed cp2 = crossProduct(b, c, point);
     Fixed cp3 = crossProduct(c, a, point);
 
-    if (cp1 == 0 || cp2 == 0 || cp3 == 0)
+    if (cp1 == Fixed(0) || cp2 == Fixed(0) || cp3 == Fixed(0))
         return false;
-    return ((cp1 > 0 && cp2 > 0 && cp3 > 0) ||
-            (cp1 < 0 && cp2 < 0 && cp3 < 0));
+    return ((cp1 > Fixed(0) && cp2 > Fixed(0) && cp3 > Fixed(0)) ||
+            (cp1 < Fixed(0) && cp2 < Fixed(0) && cp3 < Fixed(0)));
 }
